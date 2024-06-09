@@ -1,10 +1,15 @@
 import React from 'react'
 import { BiLogOut } from "react-icons/bi";
+import useLogout from '../../hooks/useLogout';
 
-function LogoutButton() {
+const LogoutButton = ()=> {
+
+  const {logout} = useLogout()
+
   return (
     <div className='m-5 '>
-        <BiLogOut className='w-6 h-6 text-white cursor-pointer' />
+        <BiLogOut className='w-6 h-6 text-white cursor-pointer'
+        onClick={logout} />
     </div>
   )
 }
