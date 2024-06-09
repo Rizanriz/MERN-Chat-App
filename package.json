@@ -1,10 +1,13 @@
 {
-  "name": "chap-app",
+  "name": "frondend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frondend && npm run build --prefix frondend",
+    "clean": "rm -rf frondend/dist"
   },
   "type": "module",
   "keywords": [],
