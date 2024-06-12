@@ -6,7 +6,8 @@
   "scripts": {
     "server": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frondend && npm run build --prefix frondend"
+    "build": "npm install && npm install --prefix frondend && npm run build --prefix frondend",
+    "clean": "rm -rf frondend/dist"
   },
   "type": "module",
   "keywords": [],
